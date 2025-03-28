@@ -1,0 +1,11 @@
+.navbar {
+  background-color: #6dd7e6 !important; /* Cambia a cualquier color */
+}
+
+.navbar .nav-link {
+  color: rgb(140, 18, 170) !important;  /* Cambia el color del texto */
+}
+
+.navbar .nav-link:hover {
+  color: rgb(25, 197, 54) !important; /* Cambia el color al pasar el cursor */
+}
