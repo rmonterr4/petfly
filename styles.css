@@ -1,12 +1,22 @@
 .navbar {
-  background-color: #6dd7e6 !important; /* Cambia a cualquier color */
+  background-color: #6dd7e6 !important;
+  height: 10vh;
 }
 
 .navbar .nav-link {
-  color: rgb(140, 18, 170) !important;  /* Cambia el color del texto */
+  color: rgb(140, 18, 170) !important;
+  font-size: 20px;
 }
 
 .navbar .nav-link:hover {
-  color: rgb(25, 197, 54) !important; /* Cambia el color al pasar el cursor */
+  color: rgb(25, 197, 54) !important;
+}
+
+.titulo{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 10vh; /* Ocupa toda la altura de la pantalla */
+  text-align: center; /* Asegura que el texto dentro esté centrado */
 }
 
