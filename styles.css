@@ -28,22 +28,17 @@ header {
   padding: 10px 50px;
 }
 
-header::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20px; /* Ajusta la altura del difuminado */
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(250, 178, 69, 0.795) 100%);
-}
-
 /* Estilos del logo */
 .logo a {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: bold;
   text-decoration: none;
   color: white;
+  transition: 0.3s;
+}
+
+.logo a:hover{
+  color: #024a45;
 }
 
 /* Estilos del menú de navegación */
@@ -56,7 +51,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   transition: color 0.3s;
 }
 
@@ -68,7 +63,7 @@ nav ul li a:hover {
 .petfly {
   position: relative;
   width: 100%;
-  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  height: 110vh; /* Ocupa toda la altura de la pantalla */
   background-image: url('Imagenes/fondo2.jpg'); /* Ruta de la imagen de fondo */
   background-size: cover;
   background-position: center;
@@ -84,7 +79,7 @@ nav ul li a:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 150px; /* Ajusta la altura del difuminado */
+  height: 150px;
   background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(255, 255, 255) 100%);
 }
 
@@ -117,14 +112,15 @@ nav ul li a:hover {
 }
 
 .hero-content a button:hover {
-  background-color: #039389;
+  background-color: #024a45;
 }
 
 /* Contenedor principal de la sección */
 .work-process {
-  background: url('Imagenes/fondo3.jpg') no-repeat center center/cover;
+  background: url('Imagenes/fondo8.jpg') no-repeat center center/cover;
   padding: 60px 10%;
   text-align: center;
+  height: 70vh;
 }
 
 /* Estilo del título */
@@ -173,25 +169,109 @@ nav ul li a:hover {
 
 /* Estilos del texto */
 .step h3 {
-  font-size: 18px;
+  font-size: 20px;
   color: #04c4b7;
   font-weight: bold;
 }
 
 .step p {
-  font-size: 14px;
+  font-size: 15px;
   color: #04c4b7;
 }
 
-/* Responsividad para móviles */
-@media (max-width: 768px) {
-  .steps-container {
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-  }
-  .step {
-      max-width: 100%;
-      margin-bottom: 20px;
-  }
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #04c4b7;
+  color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Estilos de la sección "¿Quiénes Somos?" */
+.about-us {
+  background: linear-gradient(to bottom, #f4f4f4, white);
+  padding: 60px 20px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('Imagenes/fondo7.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding-left: 5%;
+}
+
+.content-box {
+  background: rgba(255, 255, 255, 0.85); /* Fondo blanco semitransparente */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(30, 247, 210, 0.959); /* Sombra suave */
+}
+
+.content-box h2 {
+  color: #04c4b7;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.content-box h3 {
+  color: #04c4b7;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.content-box p {
+  color: #000000;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.content-box ul {
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.alimento {
+  display: flex;  
+  align-items: center;
+  max-width: 900px;
+  margin: 50px auto;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  flex: 1;
+  background: #43d3c9;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
