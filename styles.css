@@ -1,22 +1,197 @@
-.navbar {
-  background-color: #6dd7e6 !important;
-  height: 10vh;
+/* Reset de márgenes y paddings para evitar espacios no deseados */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar .nav-link {
-  color: rgb(140, 18, 170) !important;
-  font-size: 20px;
+/* Estilos del cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar .nav-link:hover {
-  color: rgb(25, 197, 54) !important;
-}
-
-.titulo{
+/* Estilos del header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #04c4b7; /* Fondo semitransparente */
+  color: white;
+  padding: 15px 0;
+  z-index: 10;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 10vh; /* Ocupa toda la altura de la pantalla */
-  text-align: center; /* Asegura que el texto dentro esté centrado */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
 }
 
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Ajusta la altura del difuminado */
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(240, 197, 105) 100%);
+}
+
+/* Estilos del logo */
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #024a45;
+}
+
+/* Sección principal con la imagen de fondo */
+.petfly {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  background-image: url('Imagenes/fondo2.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.petfly::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; /* Ajusta la altura del difuminado */
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgb(255, 255, 255) 100%);
+}
+
+/* Estilos para el contenido dentro de .petfly */
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Estilos del botón */
+.hero-content a button {
+  background-color: #04c4b7;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-content a button:hover {
+  background-color: #039389;
+}
+
+/* Contenedor principal de la sección */
+.work-process {
+  background: url('Imagenes/fondo3.jpg') no-repeat center center/cover;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+/* Estilo del título */
+.section-title {
+  display: inline-block;
+  background-color: #039389;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de los pasos */
+.steps-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* Cada paso */
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  max-width: 300px;
+}
+
+/* Número dentro del círculo */
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: 3px solid #04c4b7;
+  color: #04c4b7;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+
+/* Estilos del texto */
+.step h3 {
+  font-size: 18px;
+  color: #04c4b7;
+  font-weight: bold;
+}
+
+.step p {
+  font-size: 14px;
+  color: #04c4b7;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  .steps-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+  .step {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+}
