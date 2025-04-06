@@ -275,3 +275,111 @@ footer {
   line-height: 1.5;
   margin-bottom: 20px;
 }
+
+
+
+.carousel-container {
+  position: relative;
+  width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* 4 imágenes */
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 400px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+.app-banner {
+  background: linear-gradient(to right, #23cbc0, #43d3c9);
+  padding: 40px 20px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-banner-content {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.app-banner-text {
+  flex: 1 1 300px;
+}
+
+.app-banner-text h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.app-banner-text strong {
+  color: #011917;
+  font-weight: 800;
+}
+
+.store-buttons img {
+  height: 100px;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
+
+.app-banner-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.app-banner-image img {
+  max-height: 400px;
+  width: auto;
+}
