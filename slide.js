@@ -1,5 +1,5 @@
 const slide = document.querySelector('.carousel-slide');
-const items = document.querySelectorAll('.carousel-item');
+const items = document.querySelectorAll('.carousel-item'); 
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 const dots = document.querySelectorAll('.dot');
